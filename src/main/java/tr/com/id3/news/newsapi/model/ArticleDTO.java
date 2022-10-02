@@ -2,8 +2,10 @@ package tr.com.id3.news.newsapi.model;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class ArticleInDTO{
+public class ArticleDTO implements Serializable {
     private String author;
     private String title;
     private String description;
